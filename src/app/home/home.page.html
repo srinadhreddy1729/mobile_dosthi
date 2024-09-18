@@ -1,0 +1,62 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Dosthi Video Call and Chat App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!isAuthenticated">
+    <ion-input [(ngModel)]="username" placeholder="Username"></ion-input>
+    <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+    <ion-button (click)="signIn()">Sign In</ion-button>
+    <ion-button (click)="signUp()">Sign Up</ion-button>
+  </div>
+
+  <div *ngIf="isAuthenticated">
+    <ion-input id="roomId" placeholder="Enter Room ID" [(ngModel)]="roomId"></ion-input>
+    <ion-button (click)="joinCall()">Join Call</ion-button>
+    <ion-button (click)="endCall()" [disabled]="!inCall">End Call</ion-button>
+
+    <div class="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div class="chat-container">
+      <div id="chatMessages" class="chat-messages"></div>
+      <ion-input id="chatInput" [(ngModel)]="message" (keyup.enter)="sendMessage()"></ion-input>
+      <ion-button (click)="sendMessage()">Send</ion-button>
+    </div>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+ -->
+ <ion-header>
+  <ion-toolbar>
+    <ion-title>Dosthi Video Call and Chat App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-input id="roomId" placeholder="Enter Room ID" [(ngModel)]="roomId"></ion-input>
+    <ion-button (click)="joinCall()">Join Call</ion-button>
+    <ion-button (click)="endCall()" [disabled]="!inCall">End Call</ion-button>
+
+    <div class="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay ></video>
+    </div>
+    <div class="chat-container">
+      <div id="chatMessages" class="chat-messages"></div>
+      <ion-input id="chatInput" [(ngModel)]="message" (keyup.enter)="sendMessage()"></ion-input>
+      <ion-button (click)="sendMessage()">Send</ion-button>
+    </div>
+  </div>
+</ion-content> 

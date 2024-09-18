@@ -1,0 +1,7 @@
+{
+  "name": "android_application_dosthi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
